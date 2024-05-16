@@ -86,7 +86,7 @@ class TriplaneSynthesizer(nn.Module):
         'sampler_bbox_max': 1.,
     }
 
-    def __init__(self, triplane_dim: int, samples_per_ray: int):
+    def __init__(self, triplane_dim: int, samples_per_ray: int, decoder_model: nn.Module = None):
         super().__init__()
 
         # attributes
@@ -102,7 +102,10 @@ class TriplaneSynthesizer(nn.Module):
         self.ray_sampler = RaySampler()
 
         # modules
-        self.decoder = OSGDecoder(n_features=triplane_dim)
+        if decoder_model is not None:
+            self.decoder = decoder_model
+        else:
+            self.decoder = OSGDecoder(n_features=triplane_dim, num_layers=1)
 
     def forward(self, planes, cameras, anchors, resolutions, bg_colors, region_size: int):
         # planes: (N, 3, D', H', W')
