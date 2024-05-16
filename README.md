@@ -1,13 +1,15 @@
 # OpenLRM: Open-Source Large Reconstruction Models
 
-Fork from the original [OpenLRM](https://github.com/3DTopia/OpenLRM/tree/main) repository, which now includes a tutorial on triplanes in `Introduction_to_triplanes.ipynb`.
-
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-yellow.svg)](LICENSE)
 [![Weight License](https://img.shields.io/badge/Weight%20License-CC%20By%20NC%204.0-red)](LICENSE_WEIGHT)
 [![LRM](https://img.shields.io/badge/LRM-Arxiv%20Link-green)](https://arxiv.org/abs/2311.04400)
 
 [![HF Models](https://img.shields.io/badge/Models-Huggingface%20Models-bron)](https://huggingface.co/zxhezexin)
 [![HF Demo](https://img.shields.io/badge/Demo-Huggingface%20Demo-blue)](https://huggingface.co/spaces/zxhezexin/OpenLRM)
+
+Fork from the original [OpenLRM](https://github.com/3DTopia/OpenLRM/tree/main) repository, which now includes a tutorial on triplanes at `Introduction_to_triplanes.ipynb`. 
+
+You can also gind it here: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FeMa42/OpenLRM/blob/main/Introduction_to_triplanes_colab.ipynb)
 
 <img src="assets/rendered_video/teaser.gif" width="75%" height="auto"/>
 
